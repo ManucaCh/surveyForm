@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC Survey Form </title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <h1 id="title">Survey Form</h1>
-            <p id="description">description</p>
+            <h1 id="title" class="text-center">Eevee Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for taking your time</p>
         </header>
         <main class="form">
             <form id="survey-form">
                 <div class="form-group">
                     <label for="name" id="name-label">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required />
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                        required />
                 </div>
                 <div class="form-group">
                     <label for="email" id="email-label">Your Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                        required />
                 </div>
                 <div class="form-group">
                     <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
@@ -30,49 +34,81 @@
                         class="form-control">
                 </div>
                 <div class="form-group">
-                    <p>texto dropdown</p>
-                    <select id="dropdown" name="role" required>
-                        <option disabled selected value>Select current role</option>
-                        <option value="student">Student</option>
-                        <option value="job">Full Time Job</option>
-                        <option value="">3</option>
-                        <option value="other">Other</option>
+                    <p>Favorite Eeveelution</p>
+                    <select id="dropdown-fav" name="favorite" class="form-control" required>
+                        <option disabled selected value>Select favorite Eeveelution</option>
+                        <option value="vaporeon">Vaporeon</option>
+                        <option value="jolteon">Jolteon</option>
+                        <option value="flareon">Flareon</option>
+                        <option value="espeon">Espeon</option>
+                        <option value="umbreon">Umbreon</option>
+                        <option value="leafeon">Leafeon</option>
+                        <option value="glaceon">Glaceon</option>
+                        <option value="sylveon">Sylveon</option>
+                        <option value="eevee">None, Eevee is my favorite</option>
                     </select>
 
                 </div>
                 <div class="form-group">
-                    <p>radial test</p>
-                    <label>
-                        <input name="user-recommend" value="definitely" type="radio" class="input-radio"
-                            checked />Definitely</label>
-                    <label>
-                        <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+                    <p>Least Favorite Eeveelution</p>
+                    <select id="dropdown-least" name="least-favorite" class="form-control" required>
+                        <option disabled selected value>Select least favorite Eeveelution</option>
+                        <option value="vaporeon">Vaporeon</option>
+                        <option value="jolteon">Jolteon</option>
+                        <option value="flareon">Flareon</option>
+                        <option value="espeon">Espeon</option>
+                        <option value="umbreon">Umbreon</option>
+                        <option value="leafeon">Leafeon</option>
+                        <option value="glaceon">Glaceon</option>
+                        <option value="sylveon">Sylveon</option>
+                        <option value="eevee">Eevee is my least favorite</option>
+                    </select>
 
-                    <label>
-                        <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not
-                        sure</label>
                 </div>
                 <div class="form-group">
-                    <p>
-                        checkbox test
+                    <p>What type would you like to see next?</p>
+                    <label>
+                        <input name="next-type" value="bug" type="radio" class="input-radio" />Bug</label>
+                    <label>
+                        <input name="next-type" value="dragon" type="radio" class="input-radio" />Dragon</label>
+                    <label>
+                        <input name="next-type" value="fighting" type="radio" class="input-radio" />Fighting</label>
+                    <label>
+                        <input name="next-type" value="flying" type="radio" class="input-radio" />Flying</label>
+                    <label>
+                        <input name="next-type" value="ghost" type="radio" class="input-radio" />Ghost</label>
+                    <label>
+                        <input name="next-type" value="ground" type="radio" class="input-radio" />Ground</label>
+                    <label>
+                        <input name="next-type" value="poison" type="radio" class="input-radio" />Poison</label>
+                    <label>
+                        <input name="next-type" value="steel" type="radio" class="input-radio" />Steel</label>
+                    <label>
+                        <input name="next-type" value="rock" type="radio" class="input-radio" />Rock</label>
+                    <label>
+                        <input name="next-type" value="none" type="radio" class="input-radio" />None</label>
+
+
+                </div>
+                <div class="form-group">
+                    <p>What do you like most about your choice?
+
                     </p>
-                    <label>
-                        <input type="checkbox" value="1" class="input-checkbox" />1</label>
-
-                    <label><input type="checkbox" value="2" class="input-checkbox" />2</label>
-                    <label><input type="checkbox" value="3" class="input-checkbox" />3</label>
-                    <label><input type="checkbox" value="4" class="input-checkbox" />4</label>
-                    <label><input type="checkbox" value="5" class="input-checkbox" />5</label>
+                    <label><input type="checkbox" value="color" class="input-checkbox" />Color</label>
+                    <label><input type="checkbox" value="stats" class="input-checkbox" />Stats</label>
+                    <label><input type="checkbox" value="name" class="input-checkbox" />Name</label>
+                    <label><input type="checkbox" value="aesthetic" class="input-checkbox" />Aesthetics</label>
+                    <label><input type="checkbox" value="type" class="input-checkbox" />Type</label>
 
                 </div>
 
                 <div class="form-group">
-                    <p>text area</p>
+                    <p>Leave your comment!</p>
                     <textarea id="comments" class="input-textarea" name="comment"
-                        placeholder="enter comment here..."></textarea>
+                        placeholder="Your comment goes here..."></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" id="submit">SUBMIT</button>
+                    <button type="submit" id="submit" class="submit-button">SUBMIT</button>
                 </div>
 
 
